@@ -6,7 +6,16 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        "green-primary": "#2A4B46",
+      },
+      maxWidth: {
+        grid: "77.5rem",
+      },
+    },
+  },
   plugins: [],
 };
 export default config;
